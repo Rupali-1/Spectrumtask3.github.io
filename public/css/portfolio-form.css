@@ -1,0 +1,66 @@
+body {
+  min-height: 100vh;
+  color: #fff;
+  background: linear-gradient(to right, #130f40, #100e17);
+  position: relative;
+}
+body canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.form-section {
+  padding: 40px 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  box-shadow: 0 0 18px #222;
+  margin: 20px 0;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 7px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin: 7px 0;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  color: #000;
+  padding: 4px 8px;
+  border-radius: 4px;
+  max-height: 120px;
+  margin: 4px 0;
+}
+
+button {
+  width: 200px;
+  font-size: 17px;
+  font-family: arial;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #130f40;
+  transition: all 0.37s;
+}
+button:hover {
+  color: #000;
+  background: #fff;
+}

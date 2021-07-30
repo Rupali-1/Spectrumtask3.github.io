@@ -1,0 +1,61 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link
+      rel='stylesheet'
+      href='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css'
+      integrity='sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=='
+      crossorigin='anonymous'
+      referrerpolicy='no-referrer'
+    />
+    <link rel='stylesheet' href='./css/registration.css' />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class='wrapper'>
+      <div class='headline'>
+        <h1>Login</h1>
+      </div>
+      <form
+        class='form'
+        method='POST'
+        action='/login'
+        data-aos='fade-up'
+        data-aos-delay='50'
+      >
+        <div class='signin'>
+          <div class='form-group'>
+            <input type='email' placeholder='Email' name='email' required='' />
+          </div>
+
+          <div class='form-group'>
+            <input
+              type='password'
+              placeholder='password'
+              name='password'
+              required=''
+            />
+          </div>
+
+          <p class='warning' style='color: red'></p>
+          <button type='submit' class='btn' name='login'>LOGIN</button>
+          <div class='account-exist'>
+            Create new a account?
+            <a href='/signup' id='signup'>Signup</a>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script
+      src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js'
+      integrity='sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=='
+      crossorigin='anonymous'
+      referrerpolicy='no-referrer'
+    ></script>
+    <script type='text/javascript' src='./js/daisy.js'></script>
+    <script type='text/javascript' src='./js/login.js'></script>
+  </body>
+</html>

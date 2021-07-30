@@ -1,0 +1,141 @@
+/* @import url('https://fonts.googlepis.com/css2?family=poppins:wght@400;500;600;700;800;900&display=swap'); */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+:root {
+  --primary-color: #130f40;
+  --white-color: #fff;
+  --black-color: #3c4a57;
+  --light-gray: #e4e8ee;
+}
+body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(to right, #130f40, #100e17);
+  overflow-x: hidden;
+  position: relative;
+}
+body canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wrapper {
+  padding: 50px 20px;
+  width: 100%;
+  max-width: 668px;
+  margin: auto;
+  bottom: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  min-height: 90vh;
+  box-shadow: 0 5px 15px black;
+}
+.wrapper .headline {
+  text-align: center;
+  padding-bottom: 48px;
+}
+.wrapper .headline h1 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 42px;
+}
+.wrapper .form {
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+}
+.wrapper .form-group {
+  margin-bottom: 15px;
+}
+.wrapper .form-group input {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  padding: 11px 15px;
+  height: 48px;
+  border-radius: 5px;
+  color: var(--black-color);
+  border: 1px solid #e4e8ee;
+  width: 100%;
+}
+.wrapper .form-group input:focus {
+  outline: none;
+  border: 1px solid #5f27cd;
+}
+.wrapper .form-group input::placeholder {
+  color: var(--black-color);
+  font-weight: 400;
+  font-size: 14px;
+}
+.wrapper .btn {
+  margin: 15px 110px 30px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  padding: 15px 29px;
+  height: 48px;
+  text-transform: uppercase;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: 200ms;
+}
+.wrapper .btn:hover {
+  outline: none;
+  background: #5f27cd;
+}
+.wrapper .account-exist {
+  color: #fff;
+  border-top: 1px solid;
+  padding-top: 20px;
+  text-align: center;
+}
+.wrapper .account-exist a {
+  color: #fff;
+}
+.wrapper .forget-password {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.wrapper .forget-password a {
+  color: var(--primary-color);
+}
+.wrapper .forget-password .check-box {
+  font-size: 15px;
+  color: var(--black-color);
+}
+@media (max-width: 1030px) {
+  .wrapper::before {
+    left: -25%;
+    min-height: 60vh;
+    height: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper {
+    max-width: 500px;
+    max-height: 400px;
+  }
+  .wrapper .headline h1 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+}

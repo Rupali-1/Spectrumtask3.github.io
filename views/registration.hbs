@@ -1,0 +1,85 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link
+      rel='stylesheet'
+      href='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css'
+      integrity='sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=='
+      crossorigin='anonymous'
+      referrerpolicy='no-referrer'
+    />
+    <link rel='stylesheet' href='./css/registration.css' />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class='wrapper'>
+      <div class='headline'>
+        <h1>Signup</h1>
+      </div>
+      <form
+        class='form'
+        method='POST'
+        action='/signup'
+        data-aos='fade-up'
+        data-aos-delay='50'
+      >
+        <div class='signup'>
+          <div class='form-group'>
+            <input type='text' placeholder='First name' name='fname' required />
+          </div>
+          <div class='form-group'>
+            <input type='text' placeholder='Last name' name='lname' required />
+          </div>
+          <div class='form-group'>
+            <input type='email' placeholder='Email' name='email' required />
+          </div>
+          <div class='form-group'>
+            <input
+              type='text'
+              placeholder='Mobile number'
+              minlength='10'
+              maxlength='15'
+              name='mobile'
+              required
+            />
+          </div>
+          <div class='form-group'>
+            <input
+              type='password'
+              placeholder='Password'
+              minlength='4'
+              name='password'
+              required
+            />
+          </div>
+          <div class='form-group'>
+            <input
+              type='password'
+              placeholder='Confirm password'
+              name='c_password'
+              required
+            />
+
+            <p class='warning' style='color: red'></p>
+          </div>
+          <input type='submit' class='btn' name='signup' value='SIGN UP' />
+          <div class='account-exist'>
+            Already have an account?
+            <a href='/login' id='login'>Login</a>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script
+      src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js'
+      integrity='sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=='
+      crossorigin='anonymous'
+      referrerpolicy='no-referrer'
+    ></script>
+    <script type='text/javascript' src='./js/daisy.js'></script>
+    <script type='text/javascript' src='./js/registration.js'></script>
+  </body>
+</html>
