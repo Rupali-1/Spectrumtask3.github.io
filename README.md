@@ -2,7 +2,8 @@
 
 # My Portfolio Project
 
-Hi, I'm Rupali Mishra. This poject is developed to generate portfolio page with dynamically. This is built with Node.js and based on MVC architecture.
+Hi, I'm Rupali Mishra. This poject is developed to generate portfolio page dynamically. This is built with Node.js and based on MVC architecture.
+Visit the site here: <https://rupu-portfolio.herokuapp.com/>
 
 ## Installation
 
